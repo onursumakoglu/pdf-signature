@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id btnSave
+id pdfView
+id progressBar
+id signatureView
+layout fragment_pdf_signature

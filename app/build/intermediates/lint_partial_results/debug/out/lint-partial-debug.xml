@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.2" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.okamikosoft.pdf_signature.DemoActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.hello_blank_fragment"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="194"
+            endLine="5"
+            endColumn="40"
+            endOffset="221"/>
+        <entry
+            name="model"
+            string="attr[colorPrimaryVariant(R)],color[purple_200(U),black(U),teal_200(U),white(U),teal_700(U),purple_700(U),purple_500(U)],drawable[ic_launcher_foreground(U),ic_launcher_background(U),ic_launcher_foreground_1(R)],id[fragmentContainer(U),containerId(D)],layout[activity_demo(U),fragment_demo(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],string[title_activity_main(D),app_name(U),hello_blank_fragment(D)],style[Theme_Pdfsignaturesdk(U),Theme_MaterialComponents_DayNight_DarkActionBar(R)],xml[data_extraction_rules(U),backup_rules(U)];8^a,f^9^8,10^9^8,14^15^7^6^4^3^5^2^0^1;;;"/>
+        <location id="R.string.title_activity_main"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="3"
+            column="13"
+            startOffset="75"
+            endLine="3"
+            endColumn="39"
+            endOffset="101"/>
+    </map>
+
+</incidents>

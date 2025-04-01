@@ -1,0 +1,6 @@
+com.okamikosoft.pdf_signature_sdk
+id btnSave
+id pdfView
+id progressBar
+id signatureView
+layout fragment_pdf_signature

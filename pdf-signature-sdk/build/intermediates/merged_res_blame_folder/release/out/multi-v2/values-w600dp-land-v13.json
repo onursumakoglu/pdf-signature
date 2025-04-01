@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-merged_res-32:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/onur/.gradle/caches/transforms-3/6f71c06158b058cb94c154e65ed6dee2/transformed/material-1.12.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-mergeReleaseResources-30:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/onur/.gradle/caches/transforms-3/6f71c06158b058cb94c154e65ed6dee2/transformed/material-1.12.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-merged_res-32:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-material-1.12.0-15:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-merged_res-32:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "com.okamikosoft.pdf_signature_sdk.pdf-signature-sdk-material-1.12.0-15:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]

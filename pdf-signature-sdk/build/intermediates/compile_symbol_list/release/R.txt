@@ -1,0 +1,5 @@
+int id btnSave 0x0
+int id pdfView 0x0
+int id progressBar 0x0
+int id signatureView 0x0
+int layout fragment_pdf_signature 0x0

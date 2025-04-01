@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.okamikosoft.pdf_signature_sdk.app-mergeReleaseResources-34:/layout/fragment_demo.xml",
+        "source": "com.okamikosoft.pdf_signature_sdk.app-main-36:/layout/fragment_demo.xml"
+    },
+    {
+        "merged": "com.okamikosoft.pdf_signature_sdk.app-mergeReleaseResources-34:/layout/activity_demo.xml",
+        "source": "com.okamikosoft.pdf_signature_sdk.app-main-36:/layout/activity_demo.xml"
+    }
+]

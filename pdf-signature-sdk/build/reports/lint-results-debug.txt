@@ -1,0 +1,53 @@
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/pdf-signature-sdk/build.gradle.kts:44: Warning: A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.15.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.9.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkServerTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+
+   Explanation for issues of type "TrustAllX509TrustManager":
+   This check looks for X509TrustManager implementations whose
+   checkServerTrusted or checkClientTrusted methods do nothing (thus trusting
+   any certificate chain) which could result in insecure network traffic
+   caused by trusting arbitrary TLS/SSL certificates presented by peers.
+
+   https://goo.gle/TrustAllX509TrustManager
+
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/pdf-signature-sdk/src/main/java/com/okamikosoft/pdf_signature_sdk/customView/SignatureView.kt:31: Warning: Custom view SignatureView overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+                 ~~~~~~~~~~~~
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/pdf-signature-sdk/src/main/res/layout/fragment_pdf_signature.xml:29: Warning: Hardcoded string "Save File", should use @string resource [HardcodedText]
+        android:text="Save File"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 6 warnings

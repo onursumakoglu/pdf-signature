@@ -1,0 +1,96 @@
+/Users/onur/.gradle/caches/transforms-3/aaebb248841070133e528bab90cec6c2/transformed/lifecycle-livedata-core-2.8.7/jars/lint.jar: Warning: Library lint checks reference invalid APIs; these checks will be skipped!
+
+Lint found an issue registry (androidx.lifecycle.lint.LiveDataCoreIssueRegistry)
+which contains some references to invalid API:
+org.jetbrains.kotlin.analysis.api.session.KtAnalysisSessionProvider: org.jetbrains.kotlin.analysis.api.lifetime.KtLifetimeTokenFactory getTokenFactory()
+(Referenced from androidx/lifecycle/lint/NonNullableMutableLiveDataDetector$createUastHandler$1.class)
+
+Therefore, this lint check library is not included
+in analysis. This affects the following lint checks:
+NullSafeMutableLiveData
+
+To use this lint check, upgrade to a more recent version
+of the library. [ObsoleteLintCustomCheck]
+
+   Explanation for issues of type "ObsoleteLintCustomCheck":
+   Lint can be extended with "custom checks": additional checks implemented by
+   developers and libraries to for example enforce specific API usages
+   required by a library or a company coding style guideline.
+
+   The Lint APIs are not yet stable, so these checks may either cause a
+   performance degradation, or stop working, or provide wrong results.
+
+   This warning flags custom lint checks that are found to be using obsolete
+   APIs and will need to be updated to run in the current lint environment.
+
+   It may also flag issues found to be using a newer version of the API,
+   meaning that you need to use a newer version of lint (or Android Studio or
+   Gradle plugin etc) to work with these checks.
+
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/app/build.gradle.kts:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 33
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/app/build.gradle.kts:48: Warning: A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.15.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.9.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+/Users/onur/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar: Warning: checkServerTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+
+   Explanation for issues of type "TrustAllX509TrustManager":
+   This check looks for X509TrustManager implementations whose
+   checkServerTrusted or checkClientTrusted methods do nothing (thus trusting
+   any certificate chain) which could result in insecure network traffic
+   caused by trusting arbitrary TLS/SSL certificates presented by peers.
+
+   https://goo.gle/TrustAllX509TrustManager
+
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/app/src/main/res/values/strings.xml:3: Warning: The resource R.string.title_activity_main appears to be unused [UnusedResources]
+    <string name="title_activity_main">MainActivity</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/onur/AndroidStudioProjects/pdfsignaturesdk/app/src/main/res/values/strings.xml:5: Warning: The resource R.string.hello_blank_fragment appears to be unused [UnusedResources]
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+0 errors, 8 warnings

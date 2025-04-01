@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.2" type="incidents">
+
+    <incident
+        id="TrustAllX509TrustManager"
+        severity="warning"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </incident>
+
+    <incident
+        id="TrustAllX509TrustManager"
+        severity="warning"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </incident>
+
+    <incident
+        id="TrustAllX509TrustManager"
+        severity="warning"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldString="33"
+            replacement="34"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="13"
+            column="9"
+            startOffset="273"
+            endLine="13"
+            endColumn="23"
+            endOffset="287"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.15.0">
+        <fix-replace
+            description="Change to 1.15.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.15.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="48"
+            column="21"
+            startOffset="1074"
+            endLine="48"
+            endColumn="49"
+            endOffset="1102"/>
+    </incident>
+
+</incidents>
